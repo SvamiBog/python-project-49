@@ -2,3 +2,5 @@
 [![Actions Status](https://github.com/SvamiBog/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SvamiBog/python-project-49/actions)
 
 <a href="https://codeclimate.com/github/SvamiBog/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/03ce9072ecd338bfed8c/maintainability" /></a>
+
+https://asciinema.org/a/oz6AIWAvfPXDszLNA3HVuB92N
