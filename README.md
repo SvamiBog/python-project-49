@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/SvamiBog/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SvamiBog/python-project-49/actions)
-=======
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SvamiBog/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SvamiBog/python-project-49/actions)
 
 <a href="https://codeclimate.com/github/SvamiBog/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/03ce9072ecd338bfed8c/maintainability" /></a>
 
+Игра: «Проверка на чётность»:
 <a href="https://asciinema.org/a/oz6AIWAvfPXDszLNA3HVuB92N" target="_blank"><img src="https://asciinema.org/a/oz6AIWAvfPXDszLNA3HVuB92N.svg" /></a>
->>>>>>> 28529ce285d0a9550b2c94f52018a3ecc50d0182
+
+Игра: «Калькулятор»:
+<a href="https://asciinema.org/a/XCRWLNGH9mymfk21n7LYifxeq" target="_blank"><img src="https://asciinema.org/a/XCRWLNGH9mymfk21n7LYifxeq.svg" /></a>
