@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from brain_games.scripts.brain_games import play_game
+from brain_games.scripts.game_logic import play_game
 
 
 def generate_even_question():
