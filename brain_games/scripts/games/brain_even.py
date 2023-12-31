@@ -9,14 +9,18 @@ def generate_even_question():
     print(f"Question: {number}")
     return number
 
+
 def is_even(number):
     return number % 2 == 0
+
 
 def get_even_correct_answer(question):
     return 'yes' if is_even(question) else 'no'
 
+
 def check_even_answer(user_answer, correct_answer):
     return user_answer == correct_answer
+
 
 def main():
     play_game(
@@ -25,6 +29,7 @@ def main():
         get_even_correct_answer,
         check_even_answer
     )
+
 
 if __name__ == "__main__":
     main()

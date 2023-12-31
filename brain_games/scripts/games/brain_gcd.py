@@ -30,5 +30,6 @@ def main():
         check_gcd_answer
     )
 
+
 if __name__ == "__main__":
     main()

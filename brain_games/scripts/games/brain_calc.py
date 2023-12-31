@@ -12,11 +12,14 @@ def generate_calc_question():
     print(f"Question: {question}")
     return question
 
+
 def get_calc_correct_answer(question):
     return str(eval(question))
 
+
 def check_calc_answer(user_answer, correct_answer):
     return user_answer == correct_answer
+
 
 def main():
     play_game(
@@ -25,6 +28,7 @@ def main():
         get_calc_correct_answer,
         check_calc_answer
     )
+
 
 if __name__ == "__main__":
     main()
