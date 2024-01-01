@@ -24,7 +24,7 @@ def check_even_answer(user_answer, correct_answer):
 
 def main():
     play_game(
-        "Answer 'yes' if the number is even, otherwise answer 'no'.",
+        "Answer \"yes\" if the number is even, otherwise answer \"no\".",
         generate_even_question,
         get_even_correct_answer,
         check_even_answer
