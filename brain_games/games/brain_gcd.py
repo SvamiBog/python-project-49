@@ -7,7 +7,7 @@ from brain_games.scripts.game_logic import play_game
 def generate_gcd_question():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
-    print(f"Question: {num1}, {num2}")
+    print(f"Question: {num1} {num2}")
     return num1, num2
 
 
