@@ -17,7 +17,9 @@ def generate_progression_question():
     question_num = random.randint(0, length - 1)
     question = f"{progression_list[question_num]}"
     progression_list[question_num] = '..'
-    print(f"Question: {progression_list}")
+    progression_as_strings = [str(item) for item in progression_list]
+    progression_string = ' '.join(progression_as_strings)
+    print(f"Question: {progression_string}")
     return question
 
 
