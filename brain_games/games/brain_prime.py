@@ -25,7 +25,7 @@ def check_prime_answer(user_answer, correct_answer):
 
 def main():
     play_game(
-        "Answer \"yes\" if given number is prime. Otherwise answer \"no\"",
+        "Answer \"yes\" if given number is prime. Otherwise answer \"no\".",
         generate_prime_question,
         get_prime_correct_answer,
         check_prime_answer
