@@ -3,7 +3,8 @@
 import random
 
 
-INSTRUCTION_MESSAGE = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
+INSTRUCTION_MESSAGE = "Answer \"yes\" if the number is even, "\
+                      "otherwise answer \"no\"."
 
 
 def generate_question():

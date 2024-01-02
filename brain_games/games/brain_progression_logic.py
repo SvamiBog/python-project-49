@@ -23,5 +23,6 @@ def generate_question():
     progression_string = ' '.join(progression_as_strings)
     return progression_string, get_correct_answer(question)
 
+
 def get_correct_answer(question):
     return question
