@@ -3,7 +3,7 @@
 import random
 
 
-INSTRUCTION_MESSAGE_PRIME = "Answer \"yes\" if given number is prime. "\
+INSTRUCTION_MESSAGE = "Answer \"yes\" if given number is prime. "\
                             "Otherwise answer \"no\"."
 
 
