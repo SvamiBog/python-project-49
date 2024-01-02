@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 import random
-from brain_games.scripts.game_logic import play_game
 
 
-def generate_progression_question():
+INSTRUCTION_MESSAGE = "What number is missing in the progression?"
+
+
+def generate_question():
     length = random.randint(5, 10)
     first_num = random.randint(1, 100)
     progression_num = random.randint(1, 50)
@@ -19,26 +21,7 @@ def generate_progression_question():
     progression_list[question_num] = '..'
     progression_as_strings = [str(item) for item in progression_list]
     progression_string = ' '.join(progression_as_strings)
-    print(f"Question: {progression_string}")
+    return progression_string, get_correct_answer(question)
+
+def get_correct_answer(question):
     return question
-
-
-def get_progression_correct_answer(question):
-    return question
-
-
-def check_progression_answer(user_answer, correct_answer):
-    return user_answer == correct_answer
-
-
-def main():
-    play_game(
-        "What number is missing in the progression?",
-        generate_progression_question,
-        get_progression_correct_answer,
-        check_progression_answer
-    )
-
-
-if __name__ == "__main__":
-    main()
