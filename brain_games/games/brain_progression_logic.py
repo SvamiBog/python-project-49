@@ -21,8 +21,4 @@ def generate_question():
     progression_list[question_num] = '..'
     progression_as_strings = [str(item) for item in progression_list]
     progression_string = ' '.join(progression_as_strings)
-    return progression_string, get_correct_answer(question)
-
-
-def get_correct_answer(question):
-    return question
+    return progression_string, question
