@@ -13,9 +13,12 @@ def generate_question():
 
 
 def get_correct_answer(question):
+    return 'yes' if is_prime(question) else 'no'
+
+def is_prime(question):
     if question <= 1:
-        return 'no'
+        return False
     for i in range(2, int(question ** 0.5) + 1):
         if question % i == 0:
-            return 'no'
-    return 'yes'
+            return False
+    return True
