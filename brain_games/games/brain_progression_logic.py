@@ -2,23 +2,22 @@
 
 import random
 
-
 INSTRUCTION_MESSAGE = "What number is missing in the progression?"
-
 
 def generate_question():
     length = random.randint(5, 10)
-    first_num = random.randint(1, 100)
-    progression_num = random.randint(1, 50)
-    progression_list = []
+    start = random.randint(1, 100)
+    step = random.randint(1, 10)
+    progression = generate_progression(start, step, length)
+    hidden_element_index = random.randint(0, length - 1)
+    correct_answer = progression[hidden_element_index]
+    progression_string = create_progression_string(progression, hidden_element_index)
+    return progression_string, str(correct_answer)
 
-    for i in range(length):
-        current_number = first_num + progression_num * i
-        progression_list.append(current_number)
+def generate_progression(start, step, length):
+    return [start + step * i for i in range(length)]
 
-    question_num = random.randint(0, length - 1)
-    question = f"{progression_list[question_num]}"
-    progression_list[question_num] = '..'
-    progression_as_strings = [str(item) for item in progression_list]
-    progression_string = ' '.join(progression_as_strings)
-    return progression_string, question
+def create_progression_string(progression, hidden_index):
+    progression_with_hidden = progression[:]
+    progression_with_hidden[hidden_index] = '..'
+    return ' '.join(map(str, progression_with_hidden))
