@@ -15,6 +15,7 @@ def generate_question():
 def get_correct_answer(question):
     return 'yes' if is_prime(question) else 'no'
 
+
 def is_prime(question):
     if question <= 1:
         return False
