@@ -8,14 +8,14 @@ def welcome_user():
     return name
 
 
-def play_game(game):
+def play(game):
     correct_answers = 0
     CORRECT_ANSWERS_NEEDED = 3
     name = welcome_user()
-    print(f"{game.INSTRUCTION_MESSAGE}")
+    print(f"{game.RULE}")
 
     while correct_answers < CORRECT_ANSWERS_NEEDED:
-        question, correct_answer = game.generate_question()
+        question, correct_answer = game.generate_question_and_answer()
         print(f"Question: {question}")
         user_answer = input("Your answer: ").lower()
 

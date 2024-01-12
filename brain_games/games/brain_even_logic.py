@@ -3,12 +3,15 @@
 import random
 
 
-INSTRUCTION_MESSAGE = "Answer \"yes\" if the number is even, "\
-                      "otherwise answer \"no\"."
+RULE = "Answer \"yes\" if the number is even, "\
+       "otherwise answer \"no\"."
+
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def generate_question():
-    question = random.randint(1, 100)
+def generate_question_and_answer():
+    question = random.randint(MIN_NUMBER, MAX_NUMBER)
     return question, get_correct_answer(question)
 
 
